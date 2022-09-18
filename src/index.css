@@ -1,13 +1,154 @@
-body {
+* {
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Overpass', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+
+--orange: rgb(251, 116, 19);
+--white: rgb(255, 255, 255);
+--ligh-grey:rgb(149, 158, 172);
+--medium-grey:rgb(124, 135, 152);
+--dark-blue:rgb(37, 45, 55);
+--very-dark-blue: rgb(18, 20, 23);
+--p-font-size: 15px;
+}
+
+p {
+
+  font-size: var(--p-font-size);
+}
+
+body {
+
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  
+ 
+}
+.Container {
+
+  width: 50vw;
+  height: 50vh; 
+  border-radius: 50px;
+  border-style: solid;
+ /* background-color: linear-gradient(120deg, );*/
+ background: linear-gradient(120deg,var(--dark-blue), var(--very-dark-blue));
+ overflow: hidden;
+ 
+  
+}
+
+.btn {
+
+  border-radius: 50px;
+  padding: .5rem;
+  background: var(--medium-grey);
+  margin: 2rem; 
+}
+
+.Heading {
+
+  color: var(--white);
+}
+
+.Paragraphe {
+
+  color: var(--ligh-grey);
+}
+
+ul {
+
+  display: flex;
+  list-style: none;
+  
+}
+
+ul li {
+
+  border-radius: 50px;
+  color: var(--white);
+
+}
+
+
+
+.Yes {
+
+  background-color: var(--white);
+  border-radius: 50px;
+  transition: 0.7s;
+  text-align: center;
+  letter-spacing: inherit;
+  width: 20rem;
+  display: grid;
+  place-items: center;
+  
+}
+.Yes:hover {
+
+  background-color: var(--white);
+  border-radius: 50px;
+  
+  text-align: center;
+  letter-spacing: inherit;
+  width: 20rem;
+  display: grid;
+  place-items: center;
+}
+.No {
+
+  background-color: var(--orange);
+  border-radius: 50px;
+  text-align: center;
+  letter-spacing: inherit;
+  width: 20rem;
+  display: grid;
+  place-items: center;
+}
+
+.btn-submit {
+
+  background-color: transparent;
+  border-style: none;
+  margin: 2rem;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+}
+
+
+.Yes1 li {
+
+  background-color: var(--white);
+ 
+  
+}
+.Yes1:hover {
+
+  background-color: var(--orange);
+ 
+}
+.No1 li {
+
+  
+
+}
+
+.test  {
+
+  background-color: aqua;
+}
+
+.active{
+  background-color: rgb(147, 45, 34);
+  color: rgb(230, 54, 54);
+  margin: 200rem;
 }

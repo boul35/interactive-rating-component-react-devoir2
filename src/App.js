@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Ethereum2 from "../src/images/icon-star.svg";
+import Heading from "./components/Heading";
+import Rating from "./components/Rating";
+
+import Submit from "./components/Submit";
+import Submit2 from "./components/Submit2";
+import Paragraphe from "./components/Paragraphe";
+import Button from "./components/Button";
+
+import Test from "./components/Test";
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+   <div className="Container"><button><img src={Ethereum2} alt="this is ethetreum logo" className="Star" /></button>
+   <Heading/>
+   <Test/>
+   <Paragraphe/>
+   <Rating/>
+   <Submit/>
+  
+  
+   
+   </div> 
+   
+  )
+  
 }
 
 export default App;
